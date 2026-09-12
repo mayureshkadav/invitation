@@ -918,9 +918,9 @@ function Location() {
         <SectionHeading devanagari="बाप्पाच्या दर्शनासाठी जरूर या!" english="Find Us" light />
         <div className="text-center mb-8">
           <p className="text-[#3D0A0A] text-lg leading-relaxed" style={{ fontFamily: "'Noto Serif Devanagari', serif" }}>
-            [पत्ता ओळ १]<br />
-            [पत्ता ओळ २]<br />
-            [शहर, पिन कोड]
+            X4XQ+PH9, Panvel<br />
+            Shilottar Raichur, Maharashtra<br />
+            410206
           </p>
         </div>
         <div
