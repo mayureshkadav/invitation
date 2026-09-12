@@ -932,8 +932,8 @@ function Location() {
           }}
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.463391563077!2d73.13641577379445!3d18.999291754379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9aeaff0acfd%3A0x7a525ccfb6130bf!2sLaxmi%20public%20High%20school!5e0!3m2!1sen!2sin!4v1789254076473!5m2!1sen!2sin"
-            title="Map showing Laxmi public High school"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d603.7607528998032!2d73.1721073294598!3d18.963637233100915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e75db7beef57%3A0x927c1517857f4554!2sIDBI%20ATM%20%2FSAANGADE%20VILLAGE!5e0!3m2!1sen!2sin!4v1789256963860!5m2!1sen!2sin"
+            title="Map showing IDBI ATM / Saangade Village"
             className="absolute inset-0 h-full w-full"
             style={{ border: 0 }}
             allowFullScreen
