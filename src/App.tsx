@@ -1151,7 +1151,6 @@ function MainInvitation() {
       <Location />
       <Gallery />
       <Family />
-      <RSVP />
       <Footer />
     </div>
   )
