@@ -1148,12 +1148,9 @@ function MainInvitation() {
     <div style={{ animation: 'main-enter 0.8s ease-out' }}>
       <Hero />
       <InvitationMessage />
-      <EventDetails />
-      <Countdown />
-      <Aarti />
+      <Location />
       <Gallery />
       <Family />
-      <Location />
       <RSVP />
       <Footer />
     </div>
