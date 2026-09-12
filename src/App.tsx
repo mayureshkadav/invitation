@@ -931,12 +931,18 @@ function Location() {
             border: '2px solid #C4943C',
           }}
         >
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+          <a
+            href="https://maps.app.goo.gl/qyzZAW1BzKnf4q5P9"
+            target="_blank"
+            rel="noreferrer"
+            className="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-colors hover:bg-[#C4943C]/10"
+          >
             <div className="text-5xl">📍</div>
-            <p className="text-[#8B4513] text-xs tracking-widest" style={{ fontFamily: "'Cinzel', serif" }}>
-              [MAP PLACEHOLDER]
+            <p className="text-[#8B4513] text-sm tracking-wide" style={{ fontFamily: "'Cinzel', serif" }}>
+              X4XQ+PH9, Panvel<br />
+              Shilottar Raichur, Maharashtra 410206
             </p>
-          </div>
+          </a>
           <div className="absolute top-2 left-2 w-5 h-5 border-t-2 border-l-2 border-[#C4943C] opacity-55" />
           <div className="absolute top-2 right-2 w-5 h-5 border-t-2 border-r-2 border-[#C4943C] opacity-55" />
           <div className="absolute bottom-2 left-2 w-5 h-5 border-b-2 border-l-2 border-[#C4943C] opacity-55" />
