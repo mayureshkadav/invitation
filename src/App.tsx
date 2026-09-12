@@ -931,18 +931,15 @@ function Location() {
             border: '2px solid #C4943C',
           }}
         >
-          <a
-            href="https://maps.app.goo.gl/qyzZAW1BzKnf4q5P9"
-            target="_blank"
-            rel="noreferrer"
-            className="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-colors hover:bg-[#C4943C]/10"
-          >
-            <div className="text-5xl">📍</div>
-            <p className="text-[#8B4513] text-sm tracking-wide" style={{ fontFamily: "'Cinzel', serif" }}>
-              X4XQ+PH9, Panvel<br />
-              Shilottar Raichur, Maharashtra 410206
-            </p>
-          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.463391563077!2d73.13641577379445!3d18.999291754379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9aeaff0acfd%3A0x7a525ccfb6130bf!2sLaxmi%20public%20High%20school!5e0!3m2!1sen!2sin!4v1789254076473!5m2!1sen!2sin"
+            title="Map showing Laxmi public High school"
+            className="absolute inset-0 h-full w-full"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
           <div className="absolute top-2 left-2 w-5 h-5 border-t-2 border-l-2 border-[#C4943C] opacity-55" />
           <div className="absolute top-2 right-2 w-5 h-5 border-t-2 border-r-2 border-[#C4943C] opacity-55" />
           <div className="absolute bottom-2 left-2 w-5 h-5 border-b-2 border-l-2 border-[#C4943C] opacity-55" />
