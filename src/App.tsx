@@ -1,4 +1,4 @@
-import { useState, useEffect, useId } from 'react'
+import { useState, useEffect, useId, useRef } from 'react'
 import elephantImage from './assets/elephant.png'
 import elephantImage2 from './assets/elephant2.png'
 import lakshmiImage from './assets/laxmi ji.png'
@@ -7,6 +7,7 @@ import ganpatiHeroImage from './assets/ganesh.png'
 import hangingPropImage from './assets/hanging_prop.png'
 import toranImage from './assets/toran.png'
 import lotusImage from './assets/lotus.png'
+import festivalMusic from './assets/WhatsApp Video 2026-09-13 at 11.19.45 AM.mp4'
 
 // ─── HOOKS ─────────────────────────────────────────────────────────
 
@@ -1163,14 +1164,22 @@ function MainInvitation() {
 
 export default function App() {
   const [phase, setPhase] = useState<'welcome' | 'exiting' | 'main'>('welcome')
+  const musicRef = useRef<HTMLAudioElement>(null)
 
   const handleEnter = () => {
+    const music = musicRef.current
+    if (music) {
+      music.muted = false
+      music.volume = 0.7
+      void music.play().catch(() => undefined)
+    }
     setPhase('exiting')
     setTimeout(() => setPhase('main'), 1400)
   }
 
   return (
     <>
+      <audio ref={musicRef} src={festivalMusic} autoPlay loop muted preload="auto" />
       {phase !== 'main' && <WelcomeScreen onEnter={handleEnter} isExiting={phase === 'exiting'} />}
       {phase === 'main' && <MainInvitation />}
     </>
