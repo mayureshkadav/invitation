@@ -947,7 +947,7 @@ function Location() {
         </div>
         <div className="text-center">
           <a
-            href="https://maps.app.goo.gl/6HBB6hDP5tYEB34q6"
+            href="https://maps.app.goo.gl/yFSbt6HBtxMVtmtq8"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-[#FEF5DC] transition-all duration-300 hover:scale-105 text-sm"
@@ -1154,8 +1154,6 @@ function MainInvitation() {
       <Hero />
       <InvitationMessage />
       <Location />
-      <Gallery />
-      <Family />
       <Footer />
     </div>
   )
