@@ -91,6 +91,8 @@
 *.tif                -filter -diff -merge
 *.ico                -filter -diff -merge
 *.webp               -filter -diff -merge
+*.mp3                -filter -diff -merge
+*.mp4                -filter -diff -merge
 
 # ---------------------------------------------------------------------------
 # Data & Machine Learning
