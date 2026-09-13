@@ -298,11 +298,11 @@ function WelcomeScreen({ onEnter, isExiting }: { onEnter: () => void; isExiting:
       </div>
 
       <div className="pointer-events-none absolute left-2 top-20 z-10 hidden md:block" style={{ animation: 'fade-up 1s ease-out 0.25s both' }}>
-        <img src={malaImage} alt="Mala decoration" className="w-[140px] object-contain opacity-90 -rotate-12" />
+        <img src={malaImage} alt="Mala decoration" className="w-[140px] object-contain opacity-90 -rotate-12" decoding="async" />
       </div>
 
       <div className="pointer-events-none absolute right-2 top-20 z-10 hidden md:block" style={{ animation: 'fade-up 1s ease-out 0.25s both' }}>
-        <img src={malaImage} alt="Mala decoration" className="w-[140px] object-contain opacity-90 rotate-12" />
+        <img src={malaImage} alt="Mala decoration" className="w-[140px] object-contain opacity-90 rotate-12" decoding="async" />
       </div>
 
       {/* Main visual composition */}
@@ -316,6 +316,7 @@ function WelcomeScreen({ onEnter, isExiting }: { onEnter: () => void; isExiting:
             src={elephantImage}
             alt="Elephant illustration"
             className="w-[200px] md:w-[170px] drop-shadow-lg object-contain"
+            decoding="async"
           />
         </div>
 
@@ -325,6 +326,7 @@ function WelcomeScreen({ onEnter, isExiting }: { onEnter: () => void; isExiting:
             src={lakshmiImage}
             alt="Lakshmi Ji"
             className="w-[400px] md:w-[340px] drop-shadow-2xl object-contain"
+            decoding="async"
           />
         </div>
 
@@ -334,6 +336,7 @@ function WelcomeScreen({ onEnter, isExiting }: { onEnter: () => void; isExiting:
             src={elephantImage}
             alt="Elephant illustration"
             className="w-[200px] md:w-[170px] drop-shadow-lg object-contain scale-x-[-1]"
+            decoding="async"
           />
         </div>
       </div>
@@ -406,6 +409,7 @@ function WelcomeScreen({ onEnter, isExiting }: { onEnter: () => void; isExiting:
           src={elephantImage2}
           alt="Decorative elephant"
           className="w-[400px] md:w-[400px] object-contain opacity-95 drop-shadow-xl"
+            decoding="async"
         />
       </div>
     </div>
@@ -508,6 +512,8 @@ function Hero() {
         src={toranImage}
         alt="Marigold toran decoration"
         className="pointer-events-none absolute left-0 top-0 z-30 h-[92px] w-full object-cover object-top opacity-95 md:h-[135px]"
+        fetchPriority="high"
+        decoding="async"
         style={{ animation: 'fade-up 1s ease-out 0.1s both' }}
       />
       {/* Decorative lotus row top */}
@@ -532,6 +538,7 @@ function Hero() {
         src={hangingPropImage}
         alt="Left hanging decoration"
         className="pointer-events-none absolute left-0 top-[64px] z-10 w-[115px] md:left-4 md:top-[72px] md:w-[190px] object-contain opacity-90"
+        decoding="async"
         style={{ animation: 'fade-up 1s ease-out 0.2s both' }}
       />
 
@@ -539,6 +546,7 @@ function Hero() {
         src={hangingPropImage}
         alt="Right hanging decoration"
         className="pointer-events-none absolute right-0 top-[64px] z-10 w-[115px] md:right-4 md:top-[72px] md:w-[190px] object-contain opacity-90 scale-x-[-1]"
+        decoding="async"
         style={{ animation: 'fade-up 1s ease-out 0.2s both' }}
       />
 
@@ -546,6 +554,7 @@ function Hero() {
         src={lotusImage}
         alt="Lotus decoration"
         className="pointer-events-none z-10 mb-0 h-[82px] w-[155px] object-contain opacity-95 md:h-[108px] md:w-[195px]"
+        decoding="async"
         style={{ animation: 'fade-up 1s ease-out 0.3s both' }}
       />
 
@@ -558,6 +567,8 @@ function Hero() {
           src={ganpatiHeroImage}
           alt="Ganesha"
           className="w-[340px] md:w-[560px] drop-shadow-[0_0_35px_rgba(196,148,60,0.45)] object-contain"
+          fetchPriority="high"
+          decoding="async"
         />
       </div>
 
@@ -615,12 +626,13 @@ function InvitationMessage() {
             className="text-[#3D0A0A] text-base md:text-lg leading-loose"
             style={{ fontFamily: "'Noto Serif Devanagari', serif" }}
           >
-            गणपती बाप्पाच्या आगमनाने आमचे घर आनंद, भक्ती आणि उत्साहाने भरून जाणार आहे.
+            आपणास कळविण्यात अत्यंत आनंद होत आहे, दरवर्षीप्रमाणे याही वर्षी आमच्या घरी लाडक्या बाप्पांचे आगमन होणार असून ते आमच्या घरी
             <br /><br />
-            या मंगल प्रसंगी आपण आपल्या परिवारासह उपस्थित राहून बाप्पाचे आशीर्वाद घ्यावेत,
-            ही नम्र विनंती.
+            <strong>१४/९/२०२६ ते १९/९/२०२६</strong>
             <br /><br />
-            आपली उपस्थिती आमच्यासाठी सर्वात मोठा प्रसाद आहे.
+            अशा ६ दिवसांसाठी बाप्पा विराजमान होणार आहेत.
+            <br /><br />
+            तरी आपण सहकुटुंब सहपरिवार आमच्या कडे बाप्पाच्या दर्शनास यावे ही विनंती..
           </p>
           <div className="my-6"><GoldDivider /></div>
           <p className="text-[#6B1A1A] text-xl font-bold" style={{ fontFamily: "'Tiro Devanagari Hindi', serif" }}>
